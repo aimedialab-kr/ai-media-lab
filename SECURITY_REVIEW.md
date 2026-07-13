@@ -1,1 +1,1 @@
-No personal data, keys, tokens, cookies, or external libraries included.
+No personal data, API keys, tokens, passwords, cookies, or external libraries included. CSP enabled. Public deployment approved.

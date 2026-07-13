@@ -1,1 +1,1 @@
-Version 1.1
+v1.2 - P.B.S Media link, Lab cards, Content DB, JSON data and filters.

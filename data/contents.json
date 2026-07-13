@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-07-13",
+  "contents": [
+    {
+      "id": "AI-001",
+      "lab": "AI Lab",
+      "title": "첫 콘텐츠 주제 선정",
+      "keyword": "AI 활용",
+      "type": "Evergreen",
+      "status": "Idea",
+      "keywordScore": null,
+      "qualityScore": null,
+      "bloggerUrl": "",
+      "createdAt": "2026-07-13",
+      "updatedAt": "2026-07-13",
+      "reviewAt": ""
+    }
+  ]
+}
