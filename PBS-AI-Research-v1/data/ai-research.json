@@ -1,0 +1,86 @@
+{
+  "updatedAt": "2026-08-30",
+  "mode": "manual-v1",
+  "note": "공식 출처의 사실과 P.B.S 해석을 분리한 수동 검증용 데이터입니다.",
+  "items": [
+    {
+      "id": "AR-20260828-ANT-01",
+      "publishedAt": "2026-08-28",
+      "source": "Anthropic",
+      "sourceType": "Official",
+      "documentType": "Research",
+      "title": "Automated researchers can reliably mitigate alignment failures",
+      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+      "topics": [
+        "Agent",
+        "Alignment",
+        "Enterprise"
+      ],
+      "importance": 5,
+      "impact": "High",
+      "enterpriseApplicability": "High",
+      "maturity": "Research",
+      "confidence": "OFFICIAL",
+      "summaryKo": "Anthropic은 자동화된 AI 연구 에이전트가 여러 종류의 정렬 실패를 줄이기 위한 학습 방법과 데이터를 스스로 제안·반복 실험하도록 평가했습니다.",
+      "whyItMatters": "AI가 단순 업무 자동화를 넘어 모델 평가·개선 연구 자체를 반복 수행하는 방향을 보여줍니다. 동시에 자동 연구의 검증과 감시가 핵심 통제 지점이 됩니다.",
+      "enterpriseView": "기업에서는 자율 에이전트에게 변경 권한을 바로 주기보다, 실험·평가·검증을 분리하고 사람 승인과 모니터링을 둔 운영 구조를 참고할 수 있습니다.",
+      "whatWasStudied": "공개 안전 벤치마크를 사용해 AI 연구 에이전트가 정렬 문제별 개선 방법을 찾고, 일반 성능을 크게 훼손하지 않으면서 효과가 유지되는지 평가했습니다.",
+      "difference": "정해진 한 번의 학습 절차보다 에이전트가 문헌 탐색, 방법 제안, 학습, 평가를 반복하는 연구 루프 자체를 자동화한 점이 핵심입니다.",
+      "coreSystemView": "기간계 적용 시 에이전트의 실행권한, 승인 단계, 변경 이력, 평가 기준을 분리해야 합니다. 운영계 직접 변경보다 샌드박스·검증환경에서 먼저 적용하는 구조가 적합합니다.",
+      "risks": "평가 지표 자체의 한계, 에이전트의 편법 최적화, 감시 모델 실패, 자동화된 변경의 책임소재가 주요 위험입니다.",
+      "pbsJudgement": "PoC 검토 가능"
+    },
+    {
+      "id": "AR-20260826-OAI-01",
+      "publishedAt": "2026-08-26",
+      "source": "OpenAI",
+      "sourceType": "Official",
+      "documentType": "Security",
+      "title": "The Hugging Face incident and the road ahead",
+      "url": "https://openai.com/research/index/",
+      "topics": [
+        "Security",
+        "Enterprise"
+      ],
+      "importance": 5,
+      "impact": "High",
+      "enterpriseApplicability": "High",
+      "maturity": "Operational",
+      "confidence": "OFFICIAL",
+      "summaryKo": "OpenAI는 Hugging Face 관련 보안 사고의 조사 결과와 이후 모델 보안, 모니터링, 정렬 측면의 강화 방향을 공개했습니다.",
+      "whyItMatters": "기업 AI 도입에서 모델 자체 성능뿐 아니라 모델 배포 경로, 저장소, 공급망, 모니터링 체계가 별도의 보안 영역이라는 점을 보여주는 사례입니다.",
+      "enterpriseView": "외부 모델·오픈소스 저장소를 사용하는 기업은 모델 파일과 의존성의 출처, 배포 전 검증, 접근권한, 변경 추적을 소프트웨어 공급망 보안 수준으로 관리해야 합니다.",
+      "whatWasStudied": "보안 사고에서 확인된 문제와 대응 조치를 바탕으로 향후 AI 모델 보안 및 모니터링 강화 방향을 정리한 공식 자료입니다.",
+      "difference": "모델 안전을 프롬프트나 출력 필터에만 한정하지 않고 모델 유통·배포·운영 인프라까지 포함하는 관점이 중요합니다.",
+      "coreSystemView": "기간계와 연결되는 AI는 모델 공급망, API 키, 권한계층, 감사로그, 업데이트 승인절차를 별도 통제해야 합니다.",
+      "risks": "외부 모델 의존성, 취약한 배포 채널, 과도한 권한, 검증되지 않은 업데이트가 운영 리스크로 이어질 수 있습니다.",
+      "pbsJudgement": "실무 적용 가능"
+    },
+    {
+      "id": "AR-20260826-DM-01",
+      "publishedAt": "2026-08-26",
+      "source": "Google DeepMind",
+      "sourceType": "Paper",
+      "documentType": "White Paper",
+      "title": "Visual General Intelligence: A White Paper",
+      "url": "https://deepmind.google/research/publications/270149/",
+      "topics": [
+        "Multimodal",
+        "Reasoning"
+      ],
+      "importance": 4,
+      "impact": "Medium",
+      "enterpriseApplicability": "Medium",
+      "maturity": "Research",
+      "confidence": "OFFICIAL / arXiv",
+      "summaryKo": "시각 경험과 학습을 중심으로 일반 지능으로 가는 경로를 검토하고, 이미지·비디오·기하 등 시각 모달리티에서 어떤 지능이 나타날 수 있는지 논의한 백서입니다.",
+      "whyItMatters": "LLM 중심의 기업 AI에서 문서·화면·영상·도면처럼 시각 입력을 직접 이해하는 멀티모달 AI의 장기 방향을 이해하는 데 유용합니다.",
+      "enterpriseView": "단기적으로는 문서 이미지, UI 화면, 설비 영상, 도면 해석 등 사람의 시각 판단이 필요한 업무에서 멀티모달 적용 후보를 찾는 데 참고할 수 있습니다.",
+      "whatWasStudied": "컴퓨터 비전이 AGI 시대에 추구해야 할 원칙, 시각 입력 형태, 벤치마크, 학습 방식, 언어와 다른 모달리티의 관계를 폭넓게 다룹니다.",
+      "difference": "언어 모델에 시각 기능을 부가하는 관점보다 시각 지능 자체를 일반 지능의 출발점으로 보는 문제의식을 강조합니다.",
+      "coreSystemView": "기간계에서는 스캔 문서, 작업화면, 도면, 이미지 증빙을 구조화 데이터와 결합하는 보조 계층으로 우선 활용하는 것이 현실적입니다.",
+      "risks": "백서 수준의 장기 연구 방향이므로 곧바로 운영계 도입 기술로 해석하면 안 됩니다. 시각 오인식과 근거 추적 문제도 남습니다.",
+      "pbsJudgement": "지켜볼 기술"
+    }
+  ]
+}
