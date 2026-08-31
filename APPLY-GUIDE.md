@@ -1,25 +1,25 @@
-# 반영 방법
+# P.B.S AI Research 상세분석 개편본
 
-이번 패키지는 기존 화면을 최대한 건드리지 않는 방식입니다.
+## 목적
+핵심요약보다 상세분석의 정보량이 적었던 문제를 개선했습니다.
 
-1. `data/ai-research.json`을 GitHub의 `data/` 폴더에 덮어씁니다.
-2. `assets/js/research-month-filter.js`를 GitHub의 `assets/js/` 폴더에 새로 업로드합니다.
-3. 루트 `index.html`의 `</body>` 바로 위에 아래 한 줄만 추가합니다.
+## 변경 범위
+12건 전체의 아래 두 필드를 원문 기준으로 확장했습니다.
+- 무엇을 연구했나
+- 기존 방식과 다른 점
 
-<script src="assets/js/research-month-filter.js"></script>
+기존 Dashboard UI, 월 필터, CSS, JS는 변경하지 않습니다.
 
-기존 줄:
-<script src="assets/js/main.js"></script>
+## GitHub 전체 경로
+aimedialab-kr/ai-media-lab/data/ai-research.json
 
-최종:
-<script src="assets/js/main.js"></script>
-<script src="assets/js/research-month-filter.js"></script>
-</body>
+## ZIP 내부 경로
+data/
+└── ai-research.json
 
-4. Commit:
-Expand AI Research Jun-Aug 2026 and add month filter
+## 적용
+기존 `data/ai-research.json`을 이 파일로 덮어쓰기만 하면 됩니다.
+커밋 예시:
+Expand detailed analysis for Jun-Aug AI Research
 
-5. GitHub Pages에서 Ctrl+F5.
-
-기본값은 2026-08이며, 달력에서 2026-06/07/08을 선택할 수 있습니다.
-`전체 기간`을 누르면 6~8월 자료 전체가 표시됩니다.
+GitHub Pages 배포 완료 후 Ctrl+F5로 확인하세요.
